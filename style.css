@@ -1,0 +1,63 @@
+
+#table_Users {
+
+    width: 850px;
+    height: 300px;
+background-color: lightsteelblue;
+   border: 1px solid #ddd;
+  padding: 8px;
+    margin: auto;
+
+}
+
+#center {
+ margin: auto;
+     width: 850px;
+}
+
+td {
+    text-align: right;  
+}
+table, tr, td {
+  border: 1px solid black;
+}
+#container {
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+}
+
+#right {
+    background-color: blue;
+    float: right;
+    width: 33%;
+    height: 100%;
+    text-align: right;
+}
+
+#cen {
+    background-color: darkorange;
+     float: right;
+     width: 33%;
+     height: 100%;
+    text-align: right;
+}
+
+#left {
+    background-color: dimgray;
+     float: left;
+     width: 34%;
+     height: 100%;
+}
+
+form {
+  direction: rtl;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+input {
+  display: block;
+  direction: ltr;
+    text-align: right;
+}
