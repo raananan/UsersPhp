@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <meta charset="utf-8">
+</head>
+
+<body>
+   <div class="container">
+  <h2 style="text-align: right; padding: 10px">הוספת משתמש</h2>
+  <form action="php_page.php" method="post" onsubmit="return validateForm()">
+    <div class="form-group">
+      <label>ת.ז:</label>
+      <input class="form-control"  placeholder="הכנס/י ת.ז" name="id">
+    </div>
+    <div class="form-group">
+      <label>שם פרטי:</label>
+      <input  class="form-control"  placeholder="הכנס/י שם פרטי" name="firstname">
+    </div>
+      <div class="form-group">
+      <label>שם משפחה:</label>
+      <input  class="form-control"  placeholder="הכנס/י שם משפחה" name="lastname">
+    </div>
+      <div class="form-group">
+      <label>כתובת:</label>
+      <input  class="form-control"  placeholder="הכנס/י כתובת מגורים" name="address">
+    </div>
+      <div class="form-group">
+      <label>מייל</label>
+      <input type="email" class="form-control"  placeholder="הכנס/י אימייל" name="city">
+    </div>
+    <button type="submit" class="btn btn-default">אישור</button>
+  </form>
+</div>   
+    <div style="margin-left: 50%;margin-bottom: 80px">
+    <a href="UsersDisplay.php"><button type="button" class="btn btn-primary" style="text-align:center">תפריט ראשי</button></a> 
+        </div>
+</body>
+
+</html>

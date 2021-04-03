@@ -2,21 +2,32 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
- 
-  <script src="script.js"></script>>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
   <meta charset="utf-8">
 </head>
 
 <body>
-
+<div class="dropdown" style="float:right;margin-right:15px;">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ניהול שירות
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="#">הצגת משתמשים</a></li>
+      <li><a href="index_adduser.html">הוספת משתמש</a></li>
+      <li><a href="index_Delete_User.html">מחיקת משתמש</a></li>
+      <li><a href="index_Update_User.html">עדכון משתמש</a></li>
+    </ul>
+  </div>
 <h1 style="text-align:center">טבלת משתמשים</h1>
 
     <div id="center">
-<table id="table_Users">
+ <table class="table table-striped">
 <tr>
     <td style="font-size:26px">עיר מגורים</td>
     <td style="font-size:26px">כתובת</td>
-    <td style="font-size:26px">שפ משפחה</td>
+    <td style="font-size:26px">שם משפחה</td>
     <td style="font-size:26px">שם פרטי</td>
     <td style="font-size:26px">ת.ז</td>
 </tr>
@@ -43,6 +54,7 @@ if(!empty($res) && $res->num_rows > 0){
 
 
 </table>
+        <!--
         <div id="container">
             <div id="right"><h3 style="text-align:center">הוספת משתמש</h3>
              <form name="MyForm" action="php_page.php" method="post" onsubmit="return validateForm()"> ת.ז
@@ -74,7 +86,7 @@ if(!empty($res) && $res->num_rows > 0){
                  </form>
 
             </div>
-        </div>
+        </div>-->
 </div>
 </body>
 

@@ -61,3 +61,8 @@ input {
   direction: ltr;
     text-align: right;
 }
+ li
+{
+    text-align: right;
+}
+
